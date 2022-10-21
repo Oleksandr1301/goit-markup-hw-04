@@ -247,6 +247,44 @@ ul {
   font-size: 16px;
   line-height: 1.19;
   color: var(--p-color-index);
+  margin-bottom: 16px;
+}
+
+/* Соцмережі команди */
+
+.comand-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.comand-soc-item {
+  width: 44px;
+  height: 44px;
+}
+.comand-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+  background-color: tomato;
+}
+
+/* Клієнти */
+
+.clients-lict {
+  display: flex;
+  gap: 30px;
+}
+.clients-item {
+  width: calc((100% - 150px) / 6);
+  height: 92px;
+}
+.clients-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #AFB1B8;
+border-radius: 4px;
+display: block;
 }
 
 /* Портфоліо */
