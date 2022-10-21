@@ -276,7 +276,7 @@ ul {
 .comand-soc-link:hover .comand-soc-icon {
   fill: #ffffff;
 }
-.comand-soc-icon {
+.comand-soc-icon, .clients-logo {
   fill: var(--comand-soc-icon);
 }
 
@@ -286,16 +286,28 @@ ul {
   display: flex;
   gap: 30px;
 }
+
 .clients-item {
   width: calc((100% - 150px) / 6);
   height: 92px;
 }
+
 .clients-link {
   width: 100%;
   height: 100%;
   border: 1px solid #AFB1B8;
 border-radius: 4px;
-display: block;
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-link:hover {
+  border: 1px solid #2196F3;
+}
+
+.clients-link:hover .clients-logo {
+  fill: #2196F3;
 }
 
 /* Портфоліо */
