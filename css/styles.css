@@ -88,14 +88,45 @@ nav {
 .header-list-nav .nav-list-item + .nav-list-item {
   margin-left: 50px;
 }
+
+/* Контакти хедера */
+
 .header-list-contact {
   display: flex;
+  align-items:center;
   margin-left: auto;
 }
 
 .header-list-contact li + li {
   margin-left: 50px;
 }
+
+ .header-list-contact li {
+  display: inline-block;
+  align-items: center;
+ 
+}
+
+.email, .contact-phone-number {
+  display: flex;
+  align-items:center;
+}
+
+.heder-icon-mail {
+  margin-right: 10px;
+}
+
+.heder-icon-phon {
+  margin-right: 10px;
+}
+
+.contact-phone-number:hover .heder-icon-phon,
+.contact-phone-number:focus .heder-icon-phon,
+.email:hover .heder-icon-mail,
+.email:focus .heder-icon-mail {
+  fill: var(--logo-button-contact-color);
+}
+
 .nav-list,
 .email,
 .contact-phone-number {
@@ -397,7 +428,11 @@ ul {
   border: 1px solid #eeeeee;
 }
 
-.project-item:hover, .project-item:focus {
+.project-link {
+  display: block;
+}
+
+.project-link:hover, .project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -423,6 +458,7 @@ ul {
 }
 .footer-section {
   display: flex;
+  align-items: baseline;
 }
 .address {
   font-style: normal;
@@ -469,13 +505,10 @@ ul {
 
 /* Соцмережі футера */
 
-.footer h3 {
-  font-family: "Roboto";
-  font-style: normal;
+.footer h3 {  
   font-weight: 700;
-  font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.03em;
+
   text-transform: uppercase;
   margin-top: 12px;
   margin-bottom: 20px;
