@@ -160,10 +160,21 @@ ul {
 
 /* Секція №1 */
 
-.section-slogan {
+.hero {
+  max-width: 1600px;
   text-align: center;
-  padding-top: 0;
-  padding-bottom: 0;
+  background-color: var(--section-slogan-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/herou.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin: 0 auto;
 }
 
 .slogan {
@@ -192,20 +203,7 @@ ul {
   border: none;
 }
 
-.hero {
-  width: 1600px;
-  background-color: var(--section-slogan-color);
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/herou.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
+
 /* Секція №2 */
 
 .qualities-list {
@@ -216,7 +214,19 @@ ul {
 .qualities-item {
   width: calc((100% - 90px) / 4);
 }
-.qualities-item::before {
+
+.qualities-item div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
+
+/* .qualities-item::before {
   display: block;
   content: "";
   background-image: url(../images/qualities/antenna.svg);
@@ -240,7 +250,7 @@ ul {
 
 .icon-astronaut::before {
   background-image: url(../images/qualities/astronaut.svg);
-}
+} */
 
 .qualities-logo {
   fill: #212121;
@@ -344,6 +354,8 @@ ul {
   fill: var(--comand-soc-icon);
 }
 
+/* Сукція №5 */
+
 /* Клієнти */
 
 .clients-lict {
@@ -368,12 +380,12 @@ ul {
 
 .clients-link:hover,
 .clients-link:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--logo-button-contact-color);
 }
 
 .clients-link:hover .clients-logo,
 .clients-link:focus .clients-logo {
-  fill: #2196f3;
+  fill: var(--logo-button-contact-color);
 }
 
 /* Портфоліо */
@@ -518,7 +530,6 @@ ul {
   line-height: 16px;
 
   text-transform: uppercase;
-  margin-top: 12px;
   margin-bottom: 20px;
 }
 
